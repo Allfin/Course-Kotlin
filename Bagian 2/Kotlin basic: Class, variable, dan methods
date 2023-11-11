@@ -1,0 +1,22 @@
+// pembuatan class Person
+// visibility public, class dapat digunakan di mana saja
+// constructor digunakan untuk menginisialisasi sebuah objek di class
+// parameter constructor merupakan val age dengan tipe data Int
+public final class Person constructor(protected val age: Int){
+  // method pada class
+  fun talk() {
+    // deklarasi variable dengan tipe data string
+    val message: String
+    // memberikan value ke variabel message
+    message = "I am a simple person age $age."
+    // mencetak value message ke konsol
+    println(message)
+  }
+}
+
+// fungsi utama yang akan di jalankan pertamakali
+fun main(){
+  // pembuatan instance 
+  val simplePerson = Person(20)
+  simplePerson.talk()
+}
